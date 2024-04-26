@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Geolocation
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,8 +13,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <br>
+<div>
+  <ion-button (click)="getGPS()">GET GPS</ion-button> 
+    <p>Latitude {{lat}}</p>
+    <p>Longitude {{long}}</p>
+    <p>Time {{time}}</p>
+</div>
+
+<div>
+  <ion-button (click)="openBrowser()">Open in browser</ion-button> 
   </div>
 </ion-content>
